@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akash Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 2rem">
+  <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <img src="AkashImg.jpg" alt="Profile Picture" class="profile-picture" id="profileImage" style="margin: 0 1rem 0 0; align-self: flex-start;">
+  <div style="text-align: left;">
+    <h1>Akash V</h1>
+    
+  </div>
+  <p>Computer Technology Student!</p>
+  <input type="file" id="fileInput" accept="image/*" style="display:none">
+  <button onclick="showModal()">Change Profile</button>
+</header>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="about">About</button>
+  <button class="tab-btn" data-tab="certificates">Certificates</button>
+  <button class="tab-btn" data-tab="experience">Experience</button>
+  <button class="tab-btn" data-tab="education">Education</button>
+  <button class="tab-btn" data-tab="skills">Skills</button>
+  <button class="tab-btn" data-tab="projects">Projects</button>
+  <button class="tab-btn" data-tab="resume">Resume</button>
+  <button class="tab-btn" data-tab="contact">Contact</button>
+</div>
+
+<section id="about" class="active">
+  <h2>About Me</h2>
+  <p>I'm a bachelor of computer science in computer technology at bharathidasan college of arts and science</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p>Bharathiyar University– B.SC. in Computer Technology</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Web development</li>
+    <li>HTML</li>
+    <li>SQL</li>
+    <li>Python</li>
+    <li>C Programming</li>
+    <li>Java</li>
+    <li>C++</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li><a href="#">My Portfolio Website</a></li>
+    <li><a href="#">Mens Fashion</a></li>
+  </ul>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <a href="Akash Resume.pdf" target="_blank" class="download-button">Download CV</a>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:akash@example.com">akash@example.com</a></p>
+  <p>Phone: +91-96293460</p>
+  <p>Location: Erode, India</p>
+  <div style="margin-top: 1rem;">
+    <a href="https://www.linkedin.com/in/ghost74/" target="_blank">LinkedIn</a> |
+    <a href="https://github.com/Ghost-74" target="_blank">GitHub</a> |
+    <a href="#">Twitter</a> |
+    <a href="#">Instagram</a>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+    <div style="text-align: center;">
+      <a href="https://skills.yourlearning.ibm.com/certificate/share/8a8c01e2efewogICJvYmplY3RJZCIgOiAiVVJMLVBMTFYyTzZVRlRVIiwKICAibGVhcm5lckNOVU0iIDogIjE4OTkzMTdSRUciLAogICJvYmplY3RUeXBlIiA6ICJBQ1RJVklUWSIKfQc61cb1757c-10" target="_blank">
+        <img src="cretificate/Bringing Websites to Life with JavaScript.png" alt="MS-356" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p>Bringing Website to Life</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://example.com/certificate2" target="_blank">
+        <img src="cretificate/Develop an Interactive Task List Web Page.png" alt="Blockchain Fundamentals – IBM" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p>Develop an Interactive Task List Web Page</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://example.com/certificate3" target="_blank">
+        <img src="cretificate/Developing Sites for the Web.png" alt="Machine Learning with Python – Coursera" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p>Developing Sites for the Web</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://example.com/certificate3" target="_blank">
+        <img src="cretificate/Introduction to HTML and CSS.png" alt="Machine Learning with Python – Coursera" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p>Introduction to HTML and CSS</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://example.com/certificate3" target="_blank">
+        <img src="cretificate/Web Development Basics.png" alt="Machine Learning with Python – Coursera" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p>Web Development Basics</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://example.com/certificate3" target="_blank">
+        <img src="cretificate/Website Testing and Deployment.png" alt="Machine Learning with Python – Coursera" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p>Website Testing and Deployment</p>
+    </div>
+    <div style="text-align: center;">
+      <a href="https://example.com/certificate3" target="_blank">
+        <img src="cretificate/Your Future in Web Development.png" alt="Machine Learning with Python – Coursera" style="max-width: 200px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      </a>
+      <p>Your Future in Web Development</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li><b>WEB DEVELOPEMEND</b> – <br> Create web pages using HTML,CSS, JAVA SCRIPT</li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Akash. All rights reserved.</p>
+</footer>
+
+<div class="modal" id="passwordModal">
+  <div class="modal-content">
+    <h3>Enter Password</h3>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <div class="error" id="errorMsg"></div>
+    <button onclick="checkPassword()">Submit</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
